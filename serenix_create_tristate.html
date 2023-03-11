@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>SereniX Tristate components</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -59,16 +56,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     </head>
     <body>
         <div id="block1">
-            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;"><div><span id="trafficlight" style="vertical-align: middle;"></span><span style="vertical-align: middle;margin-left:10px;">Traffic light</span></div></div>
-            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;"><div><span id="trafficlight2" style="vertical-align: middle;"></span><span style="margin-left:10px;vertical-align: middle;">Horizontal Traffic light disabled with statement&nbsp;</span><span><b style="color:blue;"><i>trafficlight2.disabled = </i></b><b style="color:navy;">true</b></span>. Can not get focus and the state can not change.</div></div>
-            <div><span id="toggle1"></span></div>
-            <div><span id="toggle2"></span></div>
-            <div><span id="checkbox"></span></div>
-            <div><span id="color"></span><span>Color</span></div>
-            <div><span id="color2"></span><span>Color2</span></div>
-            <div><span>Color3 :&nbsp;</span><span id="color3"></span></div>
-            <div id="borderselection"></div><br><br>
-            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;"><span style="padding:10px;padding-right:20px;">Non editable bordered tristate switch (can get focus but state can not change):</span><div id="bstate"></div></div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<div>
+					<span id="trafficlight" style="vertical-align: middle;"></span>
+					<span style="vertical-align: middle;margin-left:10px;">Traffic light</span>
+				</div>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<div>
+				<span id="trafficlight2" style="vertical-align: middle;"></span>
+				<span style="margin-left:10px;vertical-align: middle;">Horizontal Traffic light disabled with statement&nbsp;</span>
+				<span><b style="color:blue;"><i>trafficlight2.disabled = </i></b><b style="color:navy;">true</b>
+				</span>. Can not get focus and the state can not change.
+				</div>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<span id="toggle1"></span>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<div></div>
+				<div>
+					<span id="toggle2"></span>
+				</div>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+			    <div>Check box with three states</div>
+				<div><span id="checkbox"></span></div>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<span id="color"></span><span>Color</span>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<span id="color2"></span><span>Color2</span>
+			</div>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;">
+				<span>Color3 :&nbsp;</span><span id="color3">
+				</span>
+			</div>
+            <div id="borderselection" style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;"></div><br><br>
+            <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;">
+				<span style="padding:10px;padding-right:20px;">Non editable bordered tristate switch (can get focus but state can not change):</span>
+				<div id="bstate"></div>
+			</div>
             <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;"><span style="padding:10px;padding-right:20px;">Editable bordered tristate switch:</span><span id="bstate2"></span></div>
             <div style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;"><span style="padding:10px;padding-right:20px;">Editable bordered tristate options:</span><span id="bstate3"></span></div>
         </div>
@@ -85,7 +114,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             var c3 = createTriState({id: 'color3', colors: ['lightgray', 'yellow', 'pink'] });
             var c4 = createTriState({id: 'color4', inputType: 'color' });
             c4.readonly = true;
-            document.getElementsByTagName('body')[0].appendChild(c4);
+			var div = document.createElement('div');
+			div.style="margin-top:5px;margin-bottom:5px;padding:10px;border:1px solid black;vertical-align: middle;"
+            document.getElementsByTagName('body')[0].appendChild(div);
+			div.appendChild(c4);
             trafficlight2.disabled = true;
             var bsel = createTriState({id: 'borderselection', stateType: 'borderselection' });
             var bstate = createTriState({id: 'bstate', stateType: 'bordered' });
