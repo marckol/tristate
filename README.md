@@ -9,7 +9,7 @@ When the file serenix_create_tristate.js is loaded, it creates the global functi
 
 ## Checkbox
 
-![image](https://user-images.githubusercontent.com/4527986/224482171-d097e20c-0edf-4ff7-916c-1a0196da757c.png)
+![image](https://user-images.githubusercontent.com/4527986/224482494-e79f9f32-99b0-4efe-9271-b49388a8b930.png)
 ![image](https://user-images.githubusercontent.com/4527986/224482211-9f0e7a40-9f57-438a-9095-2b6613d4fd68.png)
 ![image](https://user-images.githubusercontent.com/4527986/224482366-6c73d50d-8f0e-4fd4-8a0f-04948efd1774.png)
 
