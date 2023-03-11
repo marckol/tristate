@@ -16,6 +16,9 @@ When the file serenix_create_tristate.js is loaded, it creates the global functi
 ## Toggle/Switch
 
 ![image](https://user-images.githubusercontent.com/4527986/224482428-a236e9a7-5ce7-4294-b75d-f2460676b616.png)
+![image](https://user-images.githubusercontent.com/4527986/224482839-f59ef341-982e-42d6-a49b-ef40819c2ccc.png)
+![image](https://user-images.githubusercontent.com/4527986/224482879-9022a747-c66e-4575-9abe-73190dafd247.png)
+
 
 ## Bordered buttons
 
